@@ -1,0 +1,19 @@
+{
+  "name": "next-js-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkyrylov/NextJS-training.git"
+  },
+  "author": "kkyrylov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkyrylov/NextJS-training/issues"
+  },
+  "homepage": "https://github.com/kkyrylov/NextJS-training#readme"
+}
