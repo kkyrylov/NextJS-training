@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kkyrylov/NextJS-training/issues"
   },
-  "homepage": "https://github.com/kkyrylov/NextJS-training#readme"
+  "homepage": "https://github.com/kkyrylov/NextJS-training#readme",
+  "dependencies": {
+    "webpack": "^5.44.0"
+  }
 }
