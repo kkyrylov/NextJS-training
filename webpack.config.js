@@ -6,8 +6,8 @@ module.exports = {
     // output path for bundled files
     output: {
         // path for the built project code
-        path: path.resolve(__dirname, 'distributable'),
+        path: path.resolve(__dirname, 'dist'),
         // name for the output file
-        filename: 'my-first-dist.bundle.js'
+        filename: 'index.js'
     }
 };
