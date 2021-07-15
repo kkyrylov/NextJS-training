@@ -1,5 +1,11 @@
-var foo,
-    bar;
+import {
+    Foo,
+    Bar
+}from './constants';
 
-foo = 'foo';
-bar = 'bar';
+
+function test1(a, b) {
+    console.log(a, b);
+};
+
+test1(Foo, Bar);
