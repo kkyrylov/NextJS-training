@@ -1,4 +1,5 @@
 const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     // entry point of application
@@ -9,5 +10,13 @@ module.exports = {
         path: path.resolve(__dirname, 'distributable'),
         // name for the output file
         filename: 'my-first-dist.bundle.js'
-    }
+    },
+
+    // plugins section
+    plugins: [
+        // eslint plugin
+        new ESLintPlugin({
+            exclude: path.resolve(__dirname, 'node_modules'),
+        })
+    ],
 };
