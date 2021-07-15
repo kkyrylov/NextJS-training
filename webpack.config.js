@@ -16,7 +16,13 @@ module.exports = {
     plugins: [
         // eslint plugin
         new ESLintPlugin({
-            exclude: path.resolve(__dirname, 'node_modules'),
+            exclude: [
+                path.resolve(__dirname, 'node_modules'),
+                path.resolve(__dirname, 'dist'),
+            ],
+            failOnError: true,
+            fix: true,
+            extensions: ['js', 'jsx', 'ts', 'tsx']
         })
     ],
 };
