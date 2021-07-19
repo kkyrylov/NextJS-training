@@ -5,7 +5,8 @@
     },
 
     "rules": {
-        "indent"           : [1, 2],
-        "semi"             : [1, "always"]
+        "indent": [1, 2],
+        "semi": [1, "always"],
+        "eol-last": ["error", "always"]
     }
 }
