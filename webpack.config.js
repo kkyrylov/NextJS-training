@@ -1,5 +1,7 @@
 const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const webpack = require("webpack");
+
 
 module.exports = {
 	// entry point of application
@@ -19,7 +21,9 @@ module.exports = {
 				include: path.resolve(__dirname, 'src'),
 				exclude: path.resolve(__dirname, 'node_modules'),
 				loader: "babel-loader",
-				options: { presets: ["@babel/env"] }
+				options: {
+					presets: ["@babel/env", ]
+				}
 			},
 		]
 	},
@@ -43,6 +47,6 @@ module.exports = {
     contentBase: path.join(__dirname, "public/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
+    hotOnly: true,
   },
 };

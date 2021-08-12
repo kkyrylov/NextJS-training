@@ -1,11 +1,8 @@
-import {
-  Foo,
-  Bar
-} from './constants';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.js";
 
-
-function test1(a, b) {
-  console.log(a, b);
-}
-
-test1(Foo, Bar);
+ReactDOM.render(
+  <App />,
+  document.getElementById("root")
+);
