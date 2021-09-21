@@ -1,8 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App.js";
+import {
+    Foo,
+    Bar
+}from './constants';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-);
+
+function test1(a, b) {
+    console.log(a, b);
+};
+
+test1(Foo, Bar);
