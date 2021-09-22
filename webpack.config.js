@@ -16,18 +16,37 @@ module.exports = {
 	// loaders section
 	module: {
 		rules: [
+			// JS Files
 			{
 				test: /\.(js|jsx|ts|tsx)$/,
 				include: path.resolve(__dirname, 'src'),
 				exclude: path.resolve(__dirname, 'node_modules'),
 				loader: "babel-loader",
 				options: {
-					presets: ["@babel/env", ]
+					presets: ["@babel/env", ],
 				}
+			},
+			// Css files works with modules and plain css
+			{
+				test: /\.css$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true
+						}
+					}
+				],
+				include: /\.module\.css$/
 			},
 			{
 				test: /\.css$/,
-				use: ['style-loader', 'css-loader']
+				use: [
+					'style-loader',
+					'css-loader'
+				],
+				exclude: /\.module\.css$/
 			},
 		]
 	},
