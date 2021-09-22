@@ -1,12 +1,13 @@
 {
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaVersion": 2015
-    },
+	// "parserOptions": {
+	// 	"sourceType": "module",
+	// 	"ecmaVersion": 2015
+	// },
+	"parser": "babel-eslint",
 
-    "rules": {
-        "indent": [1, 2],
-        "semi": [1, "always"],
-        "eol-last": ["error", "always"]
-    }
+	"rules": {
+		"indent": [1, 2],
+		"semi": ["error", "always"],
+		"eol-last": ["error", "always"]
+	}
 }
