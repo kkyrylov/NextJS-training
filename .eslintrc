@@ -3,6 +3,11 @@
 	// 	"sourceType": "module",
 	// 	"ecmaVersion": 2015
 	// },
+
+	"extends": [
+    "plugin:react-hooks/recommended"
+  ],
+
 	"parser": "babel-eslint",
 
 	"rules": {
