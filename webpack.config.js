@@ -1,4 +1,5 @@
 const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ESLintPlugin = require('eslint-webpack-plugin');
 const webpack = require("webpack");
 
@@ -62,6 +63,12 @@ module.exports = {
       failOnError: true,
       fix: true,
       extensions: ['js', 'jsx', 'ts', 'tsx']
+    }),
+
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+      analyzerMode: 'disabled',
+      generateStatsFile: true,
     }),
 
     new webpack.HotModuleReplacementPlugin(),

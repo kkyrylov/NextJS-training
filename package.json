@@ -39,6 +39,7 @@
     "eslint": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.4",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
